@@ -3,10 +3,10 @@
 # Obtain an ubuntu server and ssh to it
 
 #Get the installer script:
-  wget https://github.com/jmmnn/Sample_ST_search/blob/master/installer.py
+  wget https://raw.githubusercontent.com/jmmnn/Sample_ST_search/master/installer.py
 
 #Run it:
-  python installer.py
+  python3 installer.py
 
 ##Activating the python environment
   source activate STI_search

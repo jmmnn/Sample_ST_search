@@ -53,7 +53,7 @@ cmds3 = [
     ]
 
 dir = os.getcwd()
-print dir
+print (dir)
 
 ###### Iterates over the FIRST list of commands
 count=0
