@@ -22,10 +22,9 @@ GETMINICONDA = "wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux
 INSTALLMINICONDA = "bash miniconda.sh -p miniconda"
 
 #######  Steps specific to this project
-
-
 NEW_PYTHON_ENVIRONMENT = "conda create --name STI_search pandas numpy"
-GET_RANDOM_DOC_GENERATOR = "wget "
+GET_DOCGENERATOR = "wget https://raw.githubusercontent.com/jmmnn/Sample_ST_search/master/randomDocs.py"
+GET_INJECTOR_SCRIPT = "wget https://raw.githubusercontent.com/jmmnn/Sample_ST_search/master/sti_injector.py"
 
 #FIRST list of commands in sequence ## Uncomment these for 1st install
 cmds = [
@@ -42,14 +41,15 @@ cmds = [
 
 #SECOND list of commands in sequence ## Comment Creata_collection after the first install
 cmds2 = [
-    #STARTSOLR,
-    #CREATE_COLLECTION
+    NEW_PYTHON_ENVIRONMENT,
+    GET_DOCGENERATOR,
+    GET_INJECTOR_SCRIPT
     ]
 
 
 #THIRD list of commands in sequence
 cmds3 = [
-    SOLRPY
+
     ]
 
 dir = os.getcwd()
