@@ -59,7 +59,7 @@ print (dir)
 count=0
 for cmd in cmds:
     count+=1
-    print "Running Command Number %s" % count
+    print ("Running Command Number %s" % count)
     subprocess.call(cmd, shell=True)
 
 
@@ -67,12 +67,12 @@ for cmd in cmds:
 count2=0
 for cmd in cmds2:
     count2+=1
-    print "Running Command Number %s" % count2
+    print ("Running Command Number %s" % count2)
     subprocess.call(cmd, shell=True)
 
 ###### Iterates over the THIRD list of commands
 count3=0
 for cmd in cmds3:
     count3+=1
-    print "Running Command Number %s" % count3
+    print ("Running Command Number %s" % count3)
     subprocess.call(cmd, shell=True)
