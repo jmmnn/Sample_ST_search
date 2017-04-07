@@ -8,7 +8,10 @@
 #Run it:
   python3 installer.py
 
-##Activating the python environment
+#loggoff and login again to the server
+
+##Create and Activating the python environment
+  conda create --name STI_search pandas numpy
   source activate STI_search
 
 ##Additional modules
@@ -19,10 +22,14 @@
 
 ##View your documents in a browser:
   http://localhost:9200/_search?pretty=true&q=*:*
-  or
+
+or from terminal:
+
   curl 'http://localhost:9200/_search?pretty=true&q=*:*'
 
+This might be useful for small servers:
 
+ ES_JAVA_OPTS="-Xms264m -Xmx264m" elasticsearch-5.3.0/bin/elasticsearch
 <!-- #installing Miniconda
 
   wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh

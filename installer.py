@@ -11,7 +11,7 @@ import os
 #Server setup
 UPDATE = "sudo apt-get update"
 JAVA = "sudo apt-get install default-jre"
-UNZIP = "sudo apt-get install unzip"
+#UNZIP = "sudo apt-get install unzip"
 
 #######  Apps and tools
 
@@ -22,15 +22,16 @@ GETMINICONDA = "wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux
 INSTALLMINICONDA = "bash miniconda.sh -p miniconda"
 
 #######  Steps specific to this project
-NEW_PYTHON_ENVIRONMENT = "conda create --name STI_search pandas numpy"
+#NEW_PYTHON_ENVIRONMENT = "conda create --name STI_search pandas numpy"
 GET_DOCGENERATOR = "wget https://raw.githubusercontent.com/jmmnn/Sample_ST_search/master/randomDocs.py"
+GET_CONFIG = "wget https://raw.githubusercontent.com/jmmnn/Sample_ST_search/master/config.py"
 GET_INJECTOR_SCRIPT = "wget https://raw.githubusercontent.com/jmmnn/Sample_ST_search/master/sti_injector.py"
 
 #FIRST list of commands in sequence ## Uncomment these for 1st install
 cmds = [
     UPDATE,
     JAVA,
-    UNZIP,
+    # UNZIP,
     GETELASTIC,
     UNPAKELASTIC,
     STARTELASTIC,
@@ -41,8 +42,9 @@ cmds = [
 
 #SECOND list of commands in sequence ## Comment Creata_collection after the first install
 cmds2 = [
-    NEW_PYTHON_ENVIRONMENT,
+    #NEW_PYTHON_ENVIRONMENT,
     GET_DOCGENERATOR,
+    GET_CONFIG,
     GET_INJECTOR_SCRIPT
     ]
 
