@@ -10,17 +10,18 @@
 
 #loggoff and login again to the server
 
-##Create and Activating the python environment
-  conda create --name STI_search pandas numpy
-  source activate STI_search
+##Create and Activating the python environment  
 
-##Additional modules
+  conda create --name STI_search pandas numpy  
+  source activate STI_search  
+
+##Additional modules  
   pip install elasticsearch
 
-##Trigger the generation of documents
+##Trigger the generation of documents  
   python sti_injector.py
 
-##View your documents in a browser:
+##View your documents in a browser:  
   http://localhost:9200/_search?pretty=true&q=*:*
 
 or from terminal:
