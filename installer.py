@@ -10,7 +10,7 @@ import os
 
 #Server setup
 UPDATE = "sudo apt-get update"
-JAVA = "sudo apt-get install default-jre"
+JAVA = "sudo apt-get install openjdk-8-jdk"
 #UNZIP = "sudo apt-get install unzip"
 
 #######  Apps and tools
@@ -40,7 +40,7 @@ cmds = [
     ]
 
 
-#SECOND list of commands in sequence ## Comment Creata_collection after the first install
+#SECOND list of commands in sequence ## Comment Create collection after the first install
 cmds2 = [
     #NEW_PYTHON_ENVIRONMENT,
     GET_DOCGENERATOR,

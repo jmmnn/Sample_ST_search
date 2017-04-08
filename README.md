@@ -30,6 +30,14 @@ or from terminal:
 This might be useful for small servers:
 
  ES_JAVA_OPTS="-Xms264m -Xmx264m" elasticsearch-5.3.0/bin/elasticsearch
+
+
+my error msg:
+[2017-04-07T12:44:28,285][WARN ][i.n.u.i.MacAddressUtil   ] Failed to find a usable hardware address from the network interfaces; using random bytes: 95:dc:ac:85:9e:73:54:ea
+
+
+
+
 <!-- #installing Miniconda
 
   wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
