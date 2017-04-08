@@ -17,7 +17,7 @@ JAVA = "sudo apt-get install openjdk-7-jdk"
 GETELASTIC = "wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.4.4/elasticsearch-2.4.4.tar.gz"
 #GETELASTIC = "wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.0.tar.gz"
 UNPAKELASTIC = "tar -xvf elasticsearch-2.4.4.tar.gz"
-STARTELASTIC = "elasticsearch-2.4.4/bin/elasticsearch"
+STARTELASTIC = "nohup elasticsearch-2.4.4/bin/elasticsearch &"
 GETMINICONDA = "wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh"
 INSTALLMINICONDA = "bash miniconda.sh -p miniconda"
 
