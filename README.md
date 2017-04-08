@@ -1,6 +1,7 @@
 # Build a simple demo of the STI Search
 
-# Obtain an ubuntu server and ssh to it
+# Obtain an ubuntu server (must be ubuntu-14.04 not 16) and ssh to it  
+
 
 #Get the installer script:
   wget https://raw.githubusercontent.com/jmmnn/Sample_ST_search/master/installer.py
