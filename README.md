@@ -3,10 +3,10 @@
 # Obtain an ubuntu server (must be ubuntu-14.04 not 16) and ssh to it  
 
 
-#Get the installer script:
+# Get the installer script:
   wget https://raw.githubusercontent.com/jmmnn/Sample_ST_search/master/installer.py
 
-#Run it:
+# Run it:
   python3 installer.py
 
 #loggoff and login again to the server
