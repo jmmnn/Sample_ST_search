@@ -6,7 +6,7 @@ import randomDocs as rd
 
 es = Elasticsearch('localhost:9200')
 
-index_name='sti_search_test'
+index_name='sti_search'
 doc_type='site'
 body = {}
 mapping = {}
@@ -29,7 +29,7 @@ else:
 
 
 #Invoke generatkon of random docs
-howMany = 2100    #enter here the number of random documents to index into elasticsearch
+howMany = 3257    #enter here the number of random documents to index into elasticsearch
 for i in range(howMany):
     es.index(index = index_name, doc_type = doc_type, body = rd.randomDoc(), id = i)
     print (i)

@@ -23,9 +23,9 @@ content = [
 #this is the main function
 def randomDoc():
     document = {
-    'Country Origin' : random.sample(['Cuba' , 'France' , 'China' , 'Russia', 'Mexico', 'United Kingdom', 'USA'],2),
+    'Country Origin' : random.sample(['Cuba' , 'France' , 'China' , 'Russia', 'Mexico', 'United Kingdom', 'USA'],1),
     'Entity Origin' : random.sample(['United Nations' , 'European Union' , 'Ministry of Foreign Affairs' , 'Permanent Mission to the UN'],2),
-    'Domain Origin' : random.sample(['gov.fr' , 'gouv.fr' , '.gov' , '.go.uk' , 'gov.cn' , '.edu' , 'edu.mx'],2),
+    'Domain Origin' : random.sample(['gov.fr' , 'gouv.fr' , '.gov' , '.go.uk' , 'gov.cn' , '.edu' , 'edu.mx'],1),
     'Title' : random.sample(titles,1),
     'Content' : random.sample(content,1),
     'url' : 'https://unite.un.org/',
